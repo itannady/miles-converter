@@ -1,3 +1,3 @@
 # Miles Converter
 
-A web app that converts miles to kilometers.
+A web app that converts miles to kilometers and vice versa.
