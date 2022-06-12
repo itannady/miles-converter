@@ -81,15 +81,36 @@ input {
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 label {
   font-weight: 800;
   color: #2d334a;
+}
+
+/* Media queries */
+@media (max-width: 800px) {
+  #converter-wrapper {
+    flex-direction: column;
+    height: 70%;
+    width: 90%;
+  }
+
+  h1 {
+    text-align: center;
+    width: 75%;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 470px) {
+  h1 {
+    font-size: 2rem;
+  }
 }

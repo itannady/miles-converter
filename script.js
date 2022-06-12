@@ -8,25 +8,15 @@ and outputs the result of the number of kilometers.
 
 //Conversion function
 
-// function milesToKilometers(val) {
-//     let output = (Number(val) * 1.60934) ;
-//     return output.toFixed(4)
-    
-// }
+let miles = document.getElementById("mi");
+let kilometers = document.getElementById("km");
 
-// console.log(milesToKilometers(2))
-
-let miles = document.getElementById('mi');
-let kilometers = document.getElementById('km');
-
-function milesToKilometers(){
-    let output = Number(miles.value * 1.60934);
-    kilometers.value = Number(output.toFixed(4));
-  
+function milesToKilometers() {
+  let output = Number(miles.value * 1.60934);
+  kilometers.value = Number(output.toFixed(4));
 }
 
 function kilometersToMiles() {
-    let output = Number(kilometers.value * 0.62137);
-    miles.value = Number(output.toFixed(4))
- 
+  let output = Number(kilometers.value * 0.62137);
+  miles.value = Number(output.toFixed(4));
 }
